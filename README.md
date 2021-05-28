@@ -8,7 +8,7 @@ The GPS coordinates for Intercom Dublin office are 53.339428, -6.257664.
 This application can function with or without an internet connection. When internet is connected, the Customer's details are gotten from here => https://s3.amazonaws.com/intercom-take-home-test/customers.txt but
 when internet is not connected, customer's details are gotten from a resource file(customer.txt) within the application.
 
-The Output is written to resources/output.txt. You may have to update the Output Url to alter the output.
+The Output is written to output.txt in the root folder.
 
 ## How To Run This Project
 

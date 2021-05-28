@@ -16,7 +16,6 @@ public class IntercomtestApplication {
 
         // if an arg is set for fileUrl, use it as the Customer Url
         final String fileUrl = args.length > 1 ? args[1] : Constants.CUSTOMER_INPUT_URL;
-//        final String fileUrl = Constants.CUSTOMER_INPUT_URL ? args[1] : Constants.CUSTOMER_INPUT_URL;
 
         CustomerService.processCustomerData(fileUrl, validRange);
     }

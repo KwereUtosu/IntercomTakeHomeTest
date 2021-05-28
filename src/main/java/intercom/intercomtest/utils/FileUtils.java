@@ -46,12 +46,14 @@ public class FileUtils {
     public static void writeToFile(List<Customer> customers) {
 
         try {
-            File output = new File(Constants.CUSTOMER_OUTPUT_URL);
-            output.createNewFile();
+            File file = new File(Constants.CUSTOMER_OUTPUT_URL);
+            file.createNewFile();
 
-            if (output.length() == 0) {
+            String output = file.getAbsolutePath().replace("\\", "\\\\");
 
+            if (file.length() == 0) {
                 FileWriter writer = new FileWriter(output);
+
                 customers.forEach(customer -> {
                     try {
                         writer.write(customer.toString() + System.lineSeparator());

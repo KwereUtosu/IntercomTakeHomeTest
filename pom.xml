@@ -12,7 +12,7 @@
     <artifactId>intercomtest</artifactId>
     <version>0.0.1</version>
     <name>intercomtest</name>
-    <description>A Project That Ouputs Customers Within 100km Range</description>
+    <description>A Project That Outputs Customers Within 100km Range</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
